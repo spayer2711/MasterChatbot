@@ -1,0 +1,74 @@
+# Master Chatbot - URL-Trained WebChatbot  
+
+This AI-powered chatbot is designed to retrieve and respond to user queries based on web content from a **specific URL**. Using **LangChain**, it scrapes, processes, and stores knowledge, ensuring responses are **limited to the trained content**.  
+
+# Project Context  
+- Develop a chatbot that **retrieves knowledge from a given URL** using LangChain.  
+- Allow users to **interact with an AI chatbot** trained only on the specified URL content.  
+- Implement a **dynamic, real-time response system** for seamless user experience.  
+- Include a **CMS for bot management, user tracking, and feedback collection**.  
+- Refer to `roadmap.md` for project milestones.  
+
+# Role  
+As an expert programming assistant, your focus includes:  
+- **Expertise:** React, SCSS, and LangChain in a Vite-based project.  
+- **Focus:** Code clarity, maintainability, modularity, and best practices.  
+- **Style:** Functional and declarative programming (avoid classes).  
+- **Performance:** Optimize API calls and state management to enhance responsiveness.  
+- **Naming:** Use meaningful variable names (`isLoading`, `hasError`).  
+
+## Tech Stack  
+- **Frontend:** React (Vite), SCSS, Context API/Redux  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Web Scraping:** LangChain (Text-based extraction)  
+- **NLP Processing:** OpenAI/Dialogflow/Rasa  
+- **Real-time Communication:** Socket.IO  
+- **Deployment:** Vercel/Heroku/AWS  
+
+## Project Guidelines  
+
+### Code Quality, Structure & Best Practices  
+- **Strict TypeScript implementation** for type safety.  
+- **Follow the Single Responsibility Principle (SRP)** in components and functions.  
+- **Unit tests for all core functionalities** using Jest/React Testing Library.  
+- **Separate API logic from UI components** (`api/chatbot.ts`).  
+- **Ensure smooth real-time chat experience** using WebSockets.  
+
+### JavaScript Best Practices  
+- Prefer **functional programming** and **declarative patterns**.  
+- Use **arrow functions** and **avoid inline logic in JSX**.  
+- Extract **reusable hooks** (`useFetchData.ts`, `useChatbot.ts`).  
+- Prefer **iterators and modularization** over code duplication.  
+- Implement **error handling** at both API and UI levels.  
+
+### React Best Practices  
+- Prefer functional programming and declarative patterns.
+- Use arrow functions and avoid inline logic in JSX.
+- Extract reusable hooks (useFetchData.ts, useChatbot.ts).
+- Prefer iterators and modularization over code duplication.
+- Implement error handling at both API and UI levels.
+- Keep components small and focused on a single responsibility.
+- Use meaningful component and file names for better maintainability.
+- Use Context API or state management libraries instead of prop drilling.
+- Optimize performance using memoization (useMemo, useCallback).
+- Use lazy loading (React.lazy, Suspense) for better performance.
+- Prefer controlled components for forms (useState + onChange).
+- Use react-hook-form for simpler form handling and validation.
+- Write unit tests using Jest and React Testing Library.
+- Ensure accessibility with semantic HTML and keyboard navigation.
+- Use environment variables (.env) for configuration and API keys.
+- Implement code splitting and tree shaking to optimize bundle size.
+
+### Naming Conventions  
+- **Files & Folders:** `kebab-case`  
+- **Functions/Variables:** `camelCase`  
+- **Constants:** `UPPER_SNAKE_CASE`  
+- **Types & Components:** `PascalCase`  
+- **Hooks:** `useCamelCase`  
+
+Refer to `file_structure.md` for the complete folder structure.  
+
+---
+
+This version aligns with your **WebChatbot** project by focusing on **URL-based knowledge retrieval, LangChain integration, and a real-time chatbot experience**. Let me know if you need further refinements! 🚀  
