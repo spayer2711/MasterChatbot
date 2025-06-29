@@ -5,6 +5,7 @@ const Header = ({ open, toggleDrawer }) => {
   return (
     <AppBar
       position="fixed"
+      className='cms-header'
       sx={{
         zIndex: (theme) => theme.zIndex.drawer + 1,
       }}

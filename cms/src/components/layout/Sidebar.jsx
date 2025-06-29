@@ -7,9 +7,9 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 const drawerWidth = 240;
 
 const menuItems = [
-  { text: 'Dashboard', icon: <DashboardIcon />, path: '/' },
-  { text: 'URLs', icon: <LinkIcon />, path: '/urls' },
-  { text: 'Chat History', icon: <ChatIcon />, path: '/chat-history' },
+  // { text: 'Dashboard', icon: <DashboardIcon />, path: '/' },
+  { text: 'URLs', icon: <LinkIcon />, path: '/urls', activemenu: ["/urls", "/"] },
+  { text: 'Chat History', icon: <ChatIcon />, path: '/chat-history', activemenu: ["/chat-history"] },
 ];
 
 const Sidebar = ({ open }) => {
@@ -29,12 +29,16 @@ const Sidebar = ({ open }) => {
     >
       <Toolbar />
       <List>
-        {menuItems.map((item) => (
-          <ListItem button key={item.text} component={Link} to={item.path}>
-            <ListItemIcon>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.text} />
-          </ListItem>
-        ))}
+        {menuItems.map((item) => {
+          const isActive = item.activemenu?.includes(window.location.pathname)
+          return (
+            <ListItem button key={item.text} component={Link} to={item.path} selected={isActive}>
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemText primary={item.text} />
+            </ListItem>
+          )
+        }
+        )}
       </List>
     </Drawer>
   );

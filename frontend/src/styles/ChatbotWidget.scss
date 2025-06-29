@@ -71,7 +71,13 @@
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
 }
-
+.error-msg{
+    color: rgb(169, 23, 23);
+}
+.primary-btn{
+  background-color: $primary-color;
+  color: #fff;
+}
 .chatbot-toggle {
     width: 60px;
     height: 60px;
@@ -422,6 +428,43 @@
             }
         }
     }
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 148px;
+}
+
+.menu-dropdown button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+    background-color: #f0f0f0;
 }
 
 @keyframes loading-wave {

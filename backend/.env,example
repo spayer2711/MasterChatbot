@@ -1,5 +1,0 @@
-PORT=3000
-MONGODB_URI="mongodb+srv://shubhampayer:ssyduysd8372389@cluster0.sodhzpc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-FRONTEND_URL=http://localhost:5173
-NODE_ENV=development
-OPENAI_API_KEY = "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"

@@ -18,6 +18,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --primary-color: rgba(154,44,17,1);
+}
+.cms-header{
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+a{
+  color: rgb(0, 0, 0) !important;
+}
+#root{
+  width: 100%;
+  height: 100vh;
+}
 
 body {
   margin: 0;
