@@ -28,8 +28,8 @@ class Retriever {
 
             this.model = new OpenAI({
                 openAIApiKey: key,
-                temperature: 0.7,
-                modelName: 'gpt-3.5-turbo',
+                temperature: 0.0,
+                modelName: 'gpt-4o-mini',
                 maxRetries: 1
             });
         } catch (error) {
